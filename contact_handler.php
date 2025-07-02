@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_content .= "Service Type: $serviceType\n\n";
     $email_content .= "Message:\n$message\n";
 
-    // 4. Construct the email headers
+    // 4. Construct the email header
     // This tells the email client who the email is from.
     $email_headers = "From: $firstName $lastName <$email>";
 
