@@ -783,38 +783,41 @@ With over 45% of Nigeria’s perishable produce lost due to lack of cold storage
                            <h4 class="ca-contact-title-2 theme-black-2 fnw-600">Send Us A Message</h4>
                            <p class="pt-16 pb-24">As a fellow small business owner, we know the fulfillment that comes from running your own business. Contact our service team to learn more about how we can help.</p>
                         </div>
-                        <form action="contact_handler.php" method="POST">
-                           <div class="row">
-                              <div class="col-md-6 mb-20">
-                                 <input type="text" placeholder="First Name">
-                              </div>
-                              <div class="col-md-6 mb-20">
-                                 <input type="text" placeholder="Last Name">
-                              </div>
-                              <div class="col-md-6 mb-20">
-                                 <input type="tel" placeholder="Phone Number">
-                              </div>
-                              <div class="col-md-6 mb-20">
-                                 <input type="email" placeholder="Email Address">
-                              </div>
-                              <div class="col-md-12 mb-20">
-                                 <select class="nice-select wide ca-select">
-                                    <option data-display="Service Type">Nothing</option>
-                                    <option value="1">Cold Chain as a Service (CCaaS)</option>
-                                    <option value="2">Digital Aggregator Platform</option>
-                                    <option value="3">Cold Storage Hubs</option>
-                                    <option value="4">CNG-Powered Cold Trucks</option>
-                                    <option value="5">ColdChainOS (Coming Soon)</option>
-                                 </select>
-                              </div>
-                              <div class="col-md-12 mb-20">
-                                 <textarea name="message" id="message" placeholder="Message"></textarea>
-                              </div>
-                              <div class="submit-btn">
-                                 <button class="ca-btn-primary-3 theme-bg-3 text-white br-50" type="submit" value="submit"> Send Message<span><i class="fa-solid fa-angle-right"></i></span></button>
-                              </div>
-                           </div>
-                        </form>
+                        <form action="process_form.php" method="POST">
+       <div class="row">
+      <div class="col-md-6 mb-20">
+         <input type="text" name="first_name" placeholder="First Name" required>
+      </div>
+      <div class="col-md-6 mb-20">
+         <input type="text" name="last_name" placeholder="Last Name" required>
+      </div>
+      <div class="col-md-6 mb-20">
+         <input type="tel" name="phone" placeholder="Phone Number" required>
+      </div>
+      <div class="col-md-6 mb-20">
+         <input type="email" name="email" placeholder="Email Address" required>
+      </div>
+      <div class="col-md-12 mb-20">
+         <select class="nice-select wide ca-select" name="service_type" required>
+            <option value="">Select Service Type</option>
+            <option value="CCaaS">Cold Chain as a Service (CCaaS)</option>
+            <option value="Aggregator">Digital Aggregator Platform</option>
+            <option value="Storage Hubs">Cold Storage Hubs</option>
+            <option value="Cold Trucks">CNG-Powered Cold Trucks</option>
+            <option value="ColdChainOS">ColdChainOS (Coming Soon)</option>
+         </select>
+      </div>
+      <div class="col-md-12 mb-20">
+         <textarea name="message" placeholder="Message" required></textarea>
+      </div>
+      <div class="submit-btn">
+         <button class="ca-btn-primary-3 theme-bg-3 text-white br-50" type="submit">Send Message
+            <span><i class="fa-solid fa-angle-right"></i></span>
+         </button>
+      </div>
+   </div>
+</form>
+
                      </div>
                   </div>
                   <div class="col-xl-6 mb-30">
