@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Email settings
-    $to = "info@coldsylos.com"; // Change this to your desired recipient
+    $to = "adeseghacyril@gmail.com"; // Change this to your desired recipient
     $subject = "New Contact Form Message from Cold Sylos Website";
     $body = "You received a new message:\n\n" .
             "First Name: $first_name\n" .
