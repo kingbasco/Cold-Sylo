@@ -12,8 +12,18 @@ RewriteRule ^(.*)$ https://coldsylos.com/$1 [L,R=301]
 # Set the default index file
 DirectoryIndex index.html index.php
 
-# Link to custom error page
+# Custom error page (all errors go to 404.html)
+ErrorDocument 400 /404.html
+ErrorDocument 401 /404.html
+ErrorDocument 403 /404.html
 ErrorDocument 404 /404.html
+ErrorDocument 405 /404.html
+ErrorDocument 408 /404.html
+ErrorDocument 429 /404.html
+ErrorDocument 500 /404.html
+ErrorDocument 502 /404.html
+ErrorDocument 503 /404.html
+ErrorDocument 504 /404.html
 
 # Disable directory listing
 Options -Indexes
